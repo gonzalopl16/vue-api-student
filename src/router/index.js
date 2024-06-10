@@ -8,6 +8,26 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/students',
+    name: 'StudentList',
+    component: () => import('../views/students/StudentList.vue')
+  },
+  {
+    path: '/students/:id',
+    name: 'StudentDetails',
+    component: () => import('../views/students/StudentDetails.vue')
+  },
+  {
+    path: '/students/create',
+    name: 'StudentCreate',
+    component: () => import('../views/students/StudentCreate.vue')
+  },
+  {
+    path: '/students/:id/edit',
+    name: 'StudentEdit',
+    component: () => import('../views/students/StudentEdit.vue')
+  },
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
